@@ -1,0 +1,137 @@
+body
+{
+	background-color : rgb(240, 240, 240);
+}
+
+table
+{
+	width : 80%;
+	margin : auto;
+	border-spacing : 0;
+	border-collapse : collapse;
+}
+
+#logo
+{
+	width : 96px;
+	height : 96px;
+	margin-top : auto;
+	margin-bottom : auto;
+}
+
+#title
+{
+	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 48px;
+}
+
+.nav
+{
+	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 18px;
+	-webkit-margin-before : 5px;
+	-webkit-margin-after : 5px;
+	text-align : center;
+}
+
+#mainmenu
+{
+	list-style : none;
+	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 14px;
+	padding-left : 15px;
+}
+
+#mainmenu li a
+{
+	text-decoration : none;
+	color : rgb(70, 70, 70);
+}
+
+#mainmenu li a:visited
+{
+	color : rgb(70, 70, 70);
+}
+
+#mainmenu li a:hover
+{
+	font-weight : bold;
+}
+
+#articlemenu
+{
+	list-style : none;
+	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 14px;
+	padding : 0 15px 0 0;
+}
+
+#articlemenu li a
+{
+	text-decoration : none;
+	color : rgb(70, 70, 70);
+}
+
+#articlemenu li a:visited
+{
+	color : rgb(70, 70, 70);
+}
+
+#articlemenu li a:hover
+{
+	font-weight : bold;
+}
+
+p
+{
+	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 12px;
+}
+
+pre
+{
+	margin : 0 0 0 60px;
+	padding : 15px 0px 15px 15px;
+	border-left : 3px solid rgba(0, 102, 204, 0.6);
+}
+
+#author
+{
+	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 12px;
+	margin : auto;
+	width : 290px;
+	height : 50px;
+}
+
+#author blockquote
+{
+	padding : 0;
+	margin : 0;
+	border : 0;
+}
+
+#author blockquote:after
+{
+	content : ' »';
+}
+
+#author blockquote:before
+{
+	content : '« ';
+}
+
+#avatar
+{
+	float : right;
+	width : 50px;
+	height : 50px;
+	border-radius : 50%;
+	margin-left : 35px;
+
+
+@font-face
+{
+	font-family : 'Quicksand';
+	src : url('Quicksand_Book.otf');
+}
