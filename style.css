@@ -21,13 +21,13 @@ table
 
 #title
 {
-	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
 	font-size : 48px;
 }
 
 .nav
 {
-	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
 	font-size : 18px;
 	-webkit-margin-before : 5px;
 	-webkit-margin-after : 5px;
@@ -37,8 +37,8 @@ table
 #mainmenu
 {
 	list-style : none;
-	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
-	font-size : 14px;
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 16px;
 	padding-left : 15px;
 }
 
@@ -61,8 +61,8 @@ table
 #articlemenu
 {
 	list-style : none;
-	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
-	font-size : 14px;
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 16px;
 	padding : 0 15px 0 0;
 }
 
@@ -84,8 +84,8 @@ table
 
 p
 {
-	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
-	font-size : 12px;
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 15px;
 }
 
 pre
@@ -97,11 +97,10 @@ pre
 
 #author
 {
-	font-family : "Quicksand", "Trebuchet MS", "Verdana", Arial, monospace;
-	font-size : 12px;
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 15px;
 	margin : auto;
-	width : 290px;
-	height : 50px;
+	width : 300px;
 }
 
 #author blockquote
