@@ -9,26 +9,27 @@
 		<meta name="keywords" content="université d'Avignon, ceri, informatique, mini-projet">
 
 		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-		<title>Mini-projet</title>
+		<title>Brainstorm - IA</title>
+		<link rel="icon" href="favicon.ico" />
 	</head>
 
 	<body>
 		<table align="center">
 			<tr>
-				<th style="width:112px"><img id="logo" src="brain.jpg" alt="LOGO"></th> <!-- LOGO -->
-				<th id="title" align="left">Brainstorm - Intelligence Artificielle</th> <!-- TITRE DU SITE -->
-
-				<th style="width:112px"></th> <!-- (Vide) -->
+				<th colspan="3" id="title" align="left">
+				<img id="logo" src="brain.jpg" alt="LOGO"> <!-- LOGO -->
+				Brainstorm - Intelligence Artificielle</th> <!-- TITRE DU SITE -->
 			</tr>
 
 			<tr>
-				<td colspan="3"><hr style="margin-top : 0; padding-top : 0; height : 2px; background-color : rgba(0, 102, 204, 0.6); border : none"></td> <!-- SEPARATEURS -->
+				<td colspan="3"><hr style="margin-top : 0; padding-top : 0; height : 2px; background-color : rgba(0, 102, 204, 0.6); border : none"></td> <!-- SEPARATEUR -->
 			</tr>
 
 			<tr style="vertical-align : top">
-				<td style="width:112px" align="left"> <!-- MENU DE NAVIGATION DU SITE (GAUCHE) -->
+				<td style="width:160px" align="left"> <!-- MENU DE NAVIGATION DU SITE (GAUCHE) -->
 					<h4 class="nav">Navigation</h4>
 
 					<ul id="mainmenu">
@@ -42,30 +43,76 @@
 						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 						<li><a href="ocr.html">OCR</a></li>
 					</ul>
+
+					<hr style="margin-top : 0; padding-top : 0; height : 1px; background-color : rgba(0, 102, 204, 0.6); border : none ; width : 70%">
+
+					<h4 class="nav">Liens utiles</h4>
+
+					<ul id="mainmenu">
+						<li><a href="https://openclassrooms.com/">Openclassrooms</a></li>
+						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+						<li><a href="https://fr.wikipedia.org/wiki/Le_Guide_du_voyageur_galactique">Wikipédia</a></li>
+						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+						<li><a href="https://twitter.com/Epharos30/status/805889784476553220">Mon twitter ♥</a></li>
+						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+					</ul>
 				</td>
 
-				<td><div style="width:80%; margin:auto; text-align : justify;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula turpis, varius quis ligula eget, tincidunt hendrerit leo. Maecenas et mauris tincidunt, laoreet urna nec, molestie lorem. Curabitur commodo, enim et imperdiet ultrices, augue magna pulvinar mi, eu tincidunt massa justo sed nisi. Sed facilisis eu augue maximus convallis. Fusce id eros vitae metus convallis tincidunt quis ac turpis. Praesent sit amet risus ornare, elementum urna a, laoreet risus. Nullam ac ipsum quis massa pretium consequat. Nulla consectetur sem ut nisi scelerisque, quis accumsan tellus egestas. Vivamus vel quam placerat, tempor ante quis, posuere enim.<br><br>
+				<td>
+					<div id="article">
+						<p>Voilà voilà, j'écris du texte pour faire des tests. Le site se munie de plusieurs outils pour la compréhension : des zones d'information, de questions, d'alertes et d'erreurs. Le code se muni également de sa propre indentation
 
-				Fusce consequat dolor dolor, nec vestibulum neque eleifend sed. Vivamus in metus a urna consectetur suscipit. Phasellus sed massa vel nunc lacinia maximus. Etiam sodales euismod dui vitae auctor. Phasellus non viverra turpis. Pellentesque scelerisque fermentum risus accumsan egestas. Phasellus ullamcorper purus vel leo ullamcorper, tempor sollicitudin mi consequat.<br><br>
+						<div class="info"><i class="fa fa-info fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div>
 
-				Vivamus faucibus felis a dui volutpat, et tincidunt neque rutrum. Aliquam varius ultricies dolor, porta tristique turpis volutpat id. Pellentesque tristique justo nec placerat laoreet. Nullam auctor, ex vitae viverra semper, lorem odio gravida leo, in tincidunt dui sapien in mauris. Duis bibendum at ipsum quis porta. Sed et laoreet augue. Aenean ac finibus mi. Aenean ultrices urna eget tellus ornare blandit. Sed sed condimentum est, id accumsan justo. Mauris vitae consectetur enim. Mauris nec ligula urna. Suspendisse potenti. Phasellus id magna vehicula, dictum sem vel, venenatis tellus. Phasellus ac maximus nisl.</p>
+						Le code se décrit comme suit (par contre y a pas de couleurs :/) :
 
-<pre><code>System.out.println("Hello World !");
+<pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Python</span></span>
 
-a = 0, b = 1;
+<code>print "Bonjour,"
 
-if(a &lt; b)
-{
-	System.out.println("Oui");
-}</code></pre>
+prenom = raw_input("Comment t'appelles-tu ? ")
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ligula turpis, varius quis ligula eget, tincidunt hendrerit leo. Maecenas et mauris tincidunt, laoreet urna nec, molestie lorem. Curabitur commodo, enim et imperdiet ultrices, augue magna pulvinar mi, eu tincidunt massa justo sed nisi. Sed facilisis eu augue maximus convallis. Fusce id eros vitae metus convallis tincidunt quis ac turpis. Praesent sit amet risus ornare, elementum urna a, laoreet risus. Nullam ac ipsum quis massa pretium consequat. Nulla consectetur sem ut nisi scelerisque, quis accumsan tellus egestas. Vivamus vel quam placerat, tempor ante quis, posuere enim.<br><br>
+print "Bienvenue", prenom</code></pre>
 
-				Fusce consequat dolor dolor, nec vestibulum neque eleifend sed. Vivamus in metus a urna consectetur suscipit. Phasellus sed massa vel nunc lacinia maximus. Etiam sodales euismod dui vitae auctor. Phasellus non viverra turpis. Pellentesque scelerisque fermentum risus accumsan egestas. Phasellus ullamcorper purus vel leo ullamcorper, tempor sollicitudin mi consequat.<br><br>
+						D'ailleurs, ce code executera :
 
-				Vivamus faucibus felis a dui volutpat, et tincidunt neque rutrum. Aliquam varius ultricies dolor, porta tristique turpis volutpat id. Pellentesque tristique justo nec placerat laoreet. Nullam auctor, ex vitae viverra semper, lorem odio gravida leo, in tincidunt dui sapien in mauris. Duis bibendum at ipsum quis porta. Sed et laoreet augue. Aenean ac finibus mi. Aenean ultrices urna eget tellus ornare blandit. Sed sed condimentum est, id accumsan justo. Mauris vitae consectetur enim. Mauris nec ligula urna. Suspendisse potenti. Phasellus id magna vehicula, dictum sem vel, venenatis tellus. Phasellus ac maximus nisl.</p></div></td>
+<pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Console</span></span>
 
-				<td style="width:112px" align="right"> <!-- MENU DE NAVIGATION DE L'ARTICLE (DROITE) -->
+<code>&gt; Bonjour,
+&gt; Comment t'appelles-tu ? Aurélien
+&gt; Bienvenue Aurélien</code></pre>
+
+						<div class="warning"><i class="fa fa-exclamation fa-3x" aria-hidden="true"></i>Attention à bien utiliser
+
+<pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Python</span></span>
+
+<code>prenom = raw_input("Comment t'appelles-tu ? ")</code></pre>
+
+							Et non pas
+
+<pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Python</span></span>
+
+<code>prenom = input("Comment t'appelles-tu ? ")</code></pre>
+
+							Sinon l'utilisateur devra utiliser des guillemets pour entrer son prénom ...
+					</div>
+
+					<div class="error"><i class="fa fa-times fa-3x" aria-hidden="true"></i>Zone d'erreur en guise d'exemple, je n'ai rien à afficher ici pour le moment !</div>
+					<div class="question"><i class="fa fa-question fa-3x" aria-hidden="true"></i>De même pour cette zone :/</div>
+
+					<div class="info"><i class="fa fa-info fa-3x" aria-hidden="true"></i>Evidemment les zones sont réutilisables ! :p</div>
+				</p>
+			</div>
+
+				<div id="author">
+					<p><img id="avatar" src="avatar.png" alt="avatar">Ecrit par <a href="author.html">Epharos</a> - Aurélien REY<br>
+					L1 Informatique - CERI<br>
+					<span id="author_citation">Réfléchir d'abord, coder en suite</span></p>
+				</div>
+
+				</td>
+
+				<td style="width:160px" align="right"> <!-- MENU DE NAVIGATION DE L'ARTICLE (DROITE) -->
 					<h4 class="nav">Parties</h4>
 
 					<ul id="articlemenu">
@@ -80,18 +127,38 @@ if(a &lt; b)
 				</td>
 			</tr>
 
-			<tr align="center">
-				<td></td>
-				<td id="informations"><img id="avatar" src="avatar.png" alt="avatar"><div id="author">Ecrit par <a href="author.html">Epharos</a> - Aurélien REY<br>L1 Informatique - CERI<br><blockquote>Réfléchir d'abord, coder en suite</blockquote></div></td>
-				<td></td>
-			</tr>
-
 			<tr>
 				<td colspan="3"><hr style="margin-top : 0; padding-top : 0; height : 2px; background-color : rgba(0, 102, 204, 0.6); border : none"></td> <!-- SEPARATEUR -->
 			</tr>
 
 			<tr>
-				<td colspan="3"><!-- Footer --></td>
+				<td colspan="3">
+					<div id="footer">
+						<ul id="footer_first">
+							<li><a href="index.html">CERI</a></li>
+							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+							<li><a href="minmax.html">Me contacter</a></li>
+						</ul>
+
+						<ul id="footer_second">
+							<li><a href="index.html">Cours Python</a></li>
+							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+							<li><a href="minmax.html">Cours Java</a></li>
+							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+							<li><a href="minmax.html">Cours HTML - CSS</a></li>
+						</ul>
+
+						<div id="footer_third">
+							<p>Ce site a été développé par REY Aurélien dans le cadre du cours de Conception Internet en guise de projet de fin du premier semestre.</p>
+
+							<div id="socials"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> 
+							<i class="fa fa-skype fa-2x" aria-hidden="true"></i> 
+							<i class="fa fa-youtube fa-2x" aria-hidden="true"></i> 
+							<i class="fa fa-twitter fa-2x" aria-hidden="true"></i> 
+							<i class="fa fa-github fa-2x" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</td>
 			</tr>
 		</table>
 	</body>

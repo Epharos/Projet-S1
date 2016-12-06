@@ -1,15 +1,33 @@
-body
+/* BODY ET TABLE */
+
+body, html
 {
-	background-color : rgb(240, 240, 240);
+	padding : 0;
+	margin : 0;
+	border : 0;
+	height : 100%;
+	background : url("bg.jpg") no-repeat center center fixed;
 }
 
 table
 {
+	min-height : 100%;
+	padding-top : 0;
+	padding-bottom : 0;
+	margin-top : 0;
+	margin-bottom : 0;
+	background-color : white;
 	width : 80%;
 	margin : auto;
 	border-spacing : 0;
 	border-collapse : collapse;
+	-webkit-box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
+
+/* --- */
+/* TOP */
 
 #logo
 {
@@ -17,6 +35,8 @@ table
 	height : 96px;
 	margin-top : auto;
 	margin-bottom : auto;
+	vertical-align : middle;
+	margin-left : 10px;
 }
 
 #title
@@ -24,6 +44,9 @@ table
 	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
 	font-size : 48px;
 }
+
+/* --- */
+/* MENUS DE NAVIGATION */
 
 .nav
 {
@@ -33,6 +56,8 @@ table
 	-webkit-margin-after : 5px;
 	text-align : center;
 }
+
+/* GAUCHE */
 
 #mainmenu
 {
@@ -58,6 +83,8 @@ table
 	font-weight : bold;
 }
 
+/* DROITE */
+
 #articlemenu
 {
 	list-style : none;
@@ -82,52 +109,206 @@ table
 	font-weight : bold;
 }
 
-p
-{
-	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
-	font-size : 15px;
-}
+/* --- */
+/* CONTENU DU SITE */
 
 pre
 {
-	margin : 0 0 0 60px;
-	padding : 15px 0px 15px 15px;
+	font-family : initial;
+	font-size : initial;
+	margin : 20px 0 20px 60px;
+	padding : 5px 0px 5px 15px;
 	border-left : 3px solid rgba(0, 102, 204, 0.6);
 }
 
-#author
+pre .language
 {
 	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
 	font-size : 15px;
-	margin : auto;
-	width : 300px;
 }
 
-#author blockquote
+#article
+{
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 15px;
+	width : 95%;
+	margin : auto; 
+	text-align : justify;
+    padding : 5px;
+}
+
+.info, .error, .question, .warning
+{
+	width : 70%;
+	margin : auto;
+	margin-top : 40px;
+	margin-bottom : 40px;
+	position : relative;
+	padding : 20px;
+	font-style : italic;
+}
+
+.info
+{
+	background-color : rgba(76, 153, 0, 0.2);
+}
+
+.error
+{
+	background-color : rgba(204, 0, 0, 0.2);
+}
+
+.question
+{
+	background-color : rgba(0, 76, 153, 0.2);
+}
+
+.warning
+{
+	background-color : rgba(255, 128, 0, 0.2);
+}
+
+.info i
+{
+	position : absolute;
+	top : -24px;
+	left : -7px;
+}
+
+.error i
+{
+	position : absolute;
+	top : -24px;
+	left : -17px;
+}
+
+.question i
+{
+	position : absolute;
+	top : -24px;
+	left : -14px;
+}
+
+.warning i
+{
+	position : absolute;
+	top : -24px;
+	left : -7px;
+}
+
+/* --- */
+/* AUTEUR */
+
+#author
+{
+	padding : 0 0 10px 0;
+	display : flex;
+	justify-content : center
+}
+
+#author p
+{
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 15px;
+	padding : 10px 0 10px 0;
+	width : 331px;
+}
+
+#avatar
+{
+	width : 50px;
+	height : 50px;
+	border-radius : 50%;
+	vertical-align : middle;
+	float : left;
+	margin-right : 15px;
+	-webkit-box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+
+#author_citation
 {
 	padding : 0;
 	margin : 0;
 	border : 0;
 }
 
-#author blockquote:after
+#author_citation:after
 {
 	content : ' »';
 }
 
-#author blockquote:before
+#author_citation:before
 {
 	content : '« ';
 }
 
-#avatar
-{
-	float : right;
-	width : 50px;
-	height : 50px;
-	border-radius : 50%;
-	margin-left : 35px;
+/* --- */
+/* PIED DE PAGE */
 
+#footer
+{
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 16px;
+	padding : 0 0 0 15px;
+	display : flex;
+	flex-direction : row;
+	position : relative;
+}
+
+#footer_first, #footer_second
+{
+	list-style : none;
+	width : 30%;
+	padding : 0;
+	padding-left : 30px;
+}
+
+#footer_third
+{
+	list-style : none;
+	width : 40%;
+	flex : 1;
+	padding-left : 30px;
+	padding-right : 30px;
+	text-align : justify;
+}
+
+#footer li
+{
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+
+#footer li a
+{
+	text-decoration : none;
+	color : rgb(150, 150, 150);
+}
+
+#footer li a:visited
+{
+	color : rgb(150, 150, 150);
+}
+
+#footer li a:hover
+{
+	font-weight : bold;
+}
+
+#socials
+{
+	text-align : center;
+}
+
+#footer .fa
+{
+	padding-right : 10px;
+}
+
+/* --- */
 
 @font-face
 {
