@@ -9,6 +9,8 @@
 		<meta name="keywords" content="université d'Avignon, ceri, informatique, mini-projet">
 
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="code.css">
+		<link rel="stylesheet" href="index.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -18,7 +20,7 @@
 
 	<body>
 		<table align="center">
-			<tr>
+			<tr id="top">
 				<th colspan="3" id="title" align="left">
 				<img id="logo" src="brain.jpg" alt="LOGO"> <!-- LOGO -->
 				Brainstorm - Intelligence Artificielle</th> <!-- TITRE DU SITE -->
@@ -53,62 +55,66 @@
 						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 						<li><a href="https://fr.wikipedia.org/wiki/Le_Guide_du_voyageur_galactique">Wikipédia</a></li>
 						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
-						<li><a href="https://twitter.com/Epharos30/status/805889784476553220">Mon twitter ♥</a></li>
+						<li><a href="https://twitter.com/Epharos30/status/805889784476553220">Mon twitter</a></li>
 						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 					</ul>
 				</td>
 
 				<td>
 					<div id="article">
-						<p>Voilà voilà, j'écris du texte pour faire des tests. Le site se munie de plusieurs outils pour la compréhension : des zones d'information, de questions, d'alertes et d'erreurs. Le code se muni également de sa propre indentation
+						<!-- CONTENU DE L'ARTICLE ICI -->
+						<h1><span>Accueil </span></h1>
 
-						<div class="info"><i class="fa fa-info fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div>
+						<h2><span>Introduction</span></h2>
 
-						Le code se décrit comme suit (par contre y a pas de couleurs :/) :
+						<p>Salut et bienvenue sur le site de <strong>Brainstorm</strong> !<br><br>
+						Si tu es intéressé par l'<strong>intelligence artificielle</strong> (<em>IA</em>) alors tu es tombé au bon endroit. Brainstorm est un site créé spécialement pour l'IA, pour que n'importe qui puisse comprendre comment
+						ça fonctionne et puisse même peut-être créer sa propre IA, qui sait ?
 
-<pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Python</span></span>
+<!-- <pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Langage</span></span>
 
-<code>print "Bonjour,"
+<code>yolo, yala <span class="pequal">=</span> <span class="pvalue">1</span>, <span class="pvalue">3</span>
 
-prenom = raw_input("Comment t'appelles-tu ? ")
+<span class="pequal">print</span> <span class="pstring">"<span class="pvalue">{1}</span>, <span class="pvalue">{2}</span>, salut, <span class="pvalue">{2}</span>, <span class="pvalue">{1}</span>"</span>.<span class="pfunction">format</span>(yolo, yala) 
 
-print "Bienvenue", prenom</code></pre>
+<span class="pdef">def</span> <span class="pstring">test</span>(<span class="pargument">index</span>) :
+	<span class="pequal">pass</span></code></pre> -->
 
-						D'ailleurs, ce code executera :
+						<div class="img" style="width : 220px"><img src="images/intro.jpg"><br><span style="display : block ; border-top : 1px solid gray ; padding-top : 5px ; margin : auto ; margin-top : 5px ; width : 95%">Le cerveau d'un androïd ?</span></div>
 
-<pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Console</span></span>
+						Je ne vais pas vous cacher que ce site tombera probablement dans l'oubli assez rapidement étant donné qu'il est statique et très compliqué à modifier ... En revanche ce design (assez mignon je trouve) sera probablement en partie réutilisé le jour où je me serai décidé à créer mon propre 'blog'.</p>
 
-<code>&gt; Bonjour,
-&gt; Comment t'appelles-tu ? Aurélien
-&gt; Bienvenue Aurélien</code></pre>
+						<h2><span>Tutoriels</span></h2>
 
-						<div class="warning"><i class="fa fa-exclamation fa-3x" aria-hidden="true"></i>Attention à bien utiliser
+						<p>La totalité des cours que vous pourez lire sur ce site on été écrit par mes soins. Si, éventuellement, une portion de code n'aurait pas été écrite par moi-même, une indication sera faite avant ou après le code, mais de manière à ce que l'info ne soit pas cachée.<br><br>
 
-<pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Python</span></span>
+						Les 4 tutoriels disponibles actuellement sur le site sont :
 
-<code>prenom = raw_input("Comment t'appelles-tu ? ")</code></pre>
+						<ul class="list" style="width : 180px ; text-align : left">
+							<li><a href="index.html">Accueil</a></li>
+							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+							<li><a href="minmax.html">Minmax</a></li>
+							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+							<li><a href="rdn.html">Réseau de neurones</a></li>
+							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+							<li><a href="qlearning.html">Q-Learning</a></li>
+							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+							<li><a href="ocr.html">OCR</a></li>
+						</ul>
 
-							Et non pas
+						<div class="info"><i class="fa fa-info fa-3x" aria-hidden="true"></i>Au moment même où vous lisez cet article, les tutoriels ne sont probablement pas tous terminés (ce serait inhumain de faire ça en 1 mois !), mais ce qui est déjà présent donne déjà une bonne idée de ce qu'est l'IA</div>
+						</p>
 
-<pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Python</span></span>
+						<h2><span>Projets</span></h2>
 
-<code>prenom = input("Comment t'appelles-tu ? ")</code></pre>
-
-							Sinon l'utilisateur devra utiliser des guillemets pour entrer son prénom ...
+						<h2><span>Sources</span></h2>
 					</div>
 
-					<div class="error"><i class="fa fa-times fa-3x" aria-hidden="true"></i>Zone d'erreur en guise d'exemple, je n'ai rien à afficher ici pour le moment !</div>
-					<div class="question"><i class="fa fa-question fa-3x" aria-hidden="true"></i>De même pour cette zone :/</div>
-
-					<div class="info"><i class="fa fa-info fa-3x" aria-hidden="true"></i>Evidemment les zones sont réutilisables ! :p</div>
-				</p>
-			</div>
-
-				<div id="author">
-					<p><img id="avatar" src="avatar.png" alt="avatar">Ecrit par <a href="author.html">Epharos</a> - Aurélien REY<br>
-					L1 Informatique - CERI<br>
-					<span id="author_citation">Réfléchir d'abord, coder en suite</span></p>
-				</div>
+					<div id="author">
+						<p><img id="avatar" src="avatar.png" alt="avatar">Ecrit par <a href="author.html">Epharos</a> - Aurélien REY<br>
+						L1 Informatique - CERI<br>
+						<span id="author_citation">Réfléchir d'abord, coder en suite</span></p>
+					</div>
 
 				</td>
 
@@ -131,31 +137,31 @@ print "Bienvenue", prenom</code></pre>
 				<td colspan="3"><hr style="margin-top : 0; padding-top : 0; height : 2px; background-color : rgba(0, 102, 204, 0.6); border : none"></td> <!-- SEPARATEUR -->
 			</tr>
 
-			<tr>
+			<tr id="foot">
 				<td colspan="3">
 					<div id="footer">
 						<ul id="footer_first">
-							<li><a href="index.html">CERI</a></li>
+							<li><a href="http://ceri.univ-avignon.fr/">CERI</a></li>
 							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
-							<li><a href="minmax.html">Me contacter</a></li>
+							<li><a href="mailto:aurelien.rey@alumni.univ-avignon.fr">Me contacter</a></li>
 						</ul>
 
 						<ul id="footer_second">
-							<li><a href="index.html">Cours Python</a></li>
+							<li><a href="https://openclassrooms.com/courses/apprenez-a-programmer-en-python">Cours Python</a></li>
 							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
-							<li><a href="minmax.html">Cours Java</a></li>
+							<li><a href="https://openclassrooms.com/courses/apprenez-a-programmer-en-java">Cours Java</a></li>
 							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
-							<li><a href="minmax.html">Cours HTML - CSS</a></li>
+							<li><a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3">Cours HTML - CSS</a></li>
 						</ul>
 
 						<div id="footer_third">
 							<p>Ce site a été développé par REY Aurélien dans le cadre du cours de Conception Internet en guise de projet de fin du premier semestre.</p>
 
-							<div id="socials"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> 
-							<i class="fa fa-skype fa-2x" aria-hidden="true"></i> 
-							<i class="fa fa-youtube fa-2x" aria-hidden="true"></i> 
-							<i class="fa fa-twitter fa-2x" aria-hidden="true"></i> 
-							<i class="fa fa-github fa-2x" aria-hidden="true"></i></div>
+							<div id="socials"><a href="https://www.facebook.com/Aurelien.Rey.Epharos"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a> 
+							<a href="#"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a> 
+							<a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a> 
+							<a href="https://twitter.com/Epharos30"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> 
+							<a href="https://github.com/Epharos"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
 						</div>
 					</div>
 				</td>
@@ -163,3 +169,23 @@ print "Bienvenue", prenom</code></pre>
 		</table>
 	</body>
 </html>
+
+<!-- BALISE CODE -->
+
+<!-- <pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Langage</span></span>
+
+<code>Code</code></pre> -->
+
+
+<!-- ZONES -->
+
+<!-- <div class="info"><i class="fa fa-info fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div>
+<div class="question"><i class="fa fa-question fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div>
+<div class="warning"><i class="fa fa-exclamation fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div>
+<div class="error"><i class="fa fa-times fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div> -->
+
+
+<!-- CONSOLE -->
+
+
+

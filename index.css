@@ -1,0 +1,9 @@
+#accueil
+{
+	display : none;
+}
+
+#accueil:target
+{
+	display : block;
+}

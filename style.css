@@ -118,13 +118,18 @@ pre
 	font-size : initial;
 	margin : 20px 0 20px 60px;
 	padding : 5px 0px 5px 15px;
-	border-left : 3px solid rgba(0, 102, 204, 0.6);
+	border-left : 3px solid rgb(150, 150, 150);
+	background-color : #1b2426;
+	color : white;
+	width : 850px;
 }
 
 pre .language
 {
 	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
 	font-size : 15px;
+	font-weight : bold; 
+	border-bottom : 1px solid white;
 }
 
 #article
@@ -135,6 +140,79 @@ pre .language
 	margin : auto; 
 	text-align : justify;
     padding : 5px;
+}
+
+h1
+{
+	font-size : 30px;
+	line-height: 0;
+    padding: 0;
+    width : 60%;
+	margin : auto;
+	text-align : center;
+	padding-top : 20px;
+}
+
+h2 span
+{
+	color : gray;
+	font-size : 22px;
+	background-color : white;
+	padding: 0 15px;
+	margin-left : 20px;
+	padding-top : 15px;
+    padding-bottom : 15px;
+}
+
+h2
+{
+	height : 1px;
+	border-bottom : 1px solid black;
+	padding : 0;
+    padding-top : 15px;
+    padding-bottom : 15px;
+}
+
+#article p
+{
+	padding-top : 8px;
+}
+
+.img 
+{
+	text-align : center;
+	margin : 20px auto 20px auto;
+}
+
+.img img
+{
+	-webkit-box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.list
+{
+	list-style : none;
+	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
+	font-size : 16px;
+	padding-left : 15px;
+}
+
+.list li a
+{
+	text-decoration : none;
+	color : rgb(70, 70, 70);
+}
+
+.list li a:visited
+{
+	color : rgb(70, 70, 70);
+}
+
+.list li a:hover
+{
+	font-weight : bold;
 }
 
 .info, .error, .question, .warning
@@ -301,11 +379,28 @@ pre .language
 #socials
 {
 	text-align : center;
+	color : yellow;
 }
 
 #footer .fa
 {
 	padding-right : 10px;
+	color : gray;
+}
+
+#footer .fa-facebook-official:hover
+{
+	color : #00F;
+}
+
+#footer .fa-github:hover
+{
+	color : black;
+}
+
+#footer .fa-twitter:hover
+{
+	color : #9CF;
 }
 
 /* --- */
