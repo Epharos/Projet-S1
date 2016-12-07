@@ -21,9 +21,22 @@ table
 	margin : auto;
 	border-spacing : 0;
 	border-collapse : collapse;
+}
+
+#container
+{
 	-webkit-box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow : 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+li:not(:last-child):after
+{
+	content : '';
+	height : 1px;
+	background-color : rgba(20, 20, 20, 0.2);
+	display : block;
+	margin : 5px 0;
 }
 
 /* --- */
@@ -31,7 +44,7 @@ table
 
 #logo
 {
-	width : 96px;
+	width : 130px;
 	height : 96px;
 	margin-top : auto;
 	margin-bottom : auto;
@@ -59,7 +72,7 @@ table
 
 /* GAUCHE */
 
-#mainmenu
+.mainmenu
 {
 	list-style : none;
 	font-family : "Quicksand", 'Open Sans Condensed', "Trebuchet MS", "Verdana", Arial, monospace;
@@ -67,18 +80,18 @@ table
 	padding-left : 15px;
 }
 
-#mainmenu li a
+.mainmenu li a
 {
 	text-decoration : none;
 	color : rgb(70, 70, 70);
 }
 
-#mainmenu li a:visited
+.mainmenu li a:visited
 {
 	color : rgb(70, 70, 70);
 }
 
-#mainmenu li a:hover
+.mainmenu li a:hover
 {
 	font-weight : bold;
 }
@@ -168,6 +181,7 @@ h2
 {
 	height : 1px;
 	border-bottom : 1px solid black;
+	margin-top : 0;
 	padding : 0;
     padding-top : 15px;
     padding-bottom : 15px;
@@ -205,6 +219,11 @@ h2
 	color : rgb(70, 70, 70);
 }
 
+.list li:before
+{
+	content : '> ';
+}
+
 .list li a:visited
 {
 	color : rgb(70, 70, 70);
@@ -215,12 +234,17 @@ h2
 	font-weight : bold;
 }
 
+#projects td
+{
+	padding : 5px 0;
+}
+
 .info, .error, .question, .warning
 {
 	width : 70%;
 	margin : auto;
 	margin-top : 40px;
-	margin-bottom : 40px;
+	margin-bottom : 20px;
 	position : relative;
 	padding : 20px;
 	font-style : italic;

@@ -2,7 +2,7 @@
 
 <html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="author" content="Rey Aurélien Groupe TD 4">
 		<meta name="reply-to" content="aurelien.rey@alumni.univ-avignon.fr">
 		<meta name="description" content="Mini-projet Conception Internet">
@@ -15,14 +15,14 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
 		<title>Brainstorm - IA</title>
-		<link rel="icon" href="favicon.ico" />
+		<link rel="icon" href="favicon.ico">
 	</head>
 
 	<body>
-		<table align="center">
+		<table id="container">
 			<tr id="top">
-				<th colspan="3" id="title" align="left">
-				<img id="logo" src="brain.jpg" alt="LOGO"> <!-- LOGO -->
+				<th colspan="3" id="title" align="left" style="height : 120px">
+				<img id="logo" src="brain.png" alt="LOGO"> <!-- LOGO -->
 				Brainstorm - Intelligence Artificielle</th> <!-- TITRE DU SITE -->
 			</tr>
 
@@ -34,15 +34,11 @@
 				<td style="width:160px" align="left"> <!-- MENU DE NAVIGATION DU SITE (GAUCHE) -->
 					<h4 class="nav">Navigation</h4>
 
-					<ul id="mainmenu">
+					<ul class="mainmenu">
 						<li><a href="index.html">Accueil</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 						<li><a href="minmax.html">Minmax</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 						<li><a href="rdn.html">Réseau de neurones</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 						<li><a href="qlearning.html">Q-Learning</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 						<li><a href="ocr.html">OCR</a></li>
 					</ul>
 
@@ -50,64 +46,129 @@
 
 					<h4 class="nav">Liens utiles</h4>
 
-					<ul id="mainmenu">
+					<ul class="mainmenu">
 						<li><a href="https://openclassrooms.com/">Openclassrooms</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 						<li><a href="https://fr.wikipedia.org/wiki/Le_Guide_du_voyageur_galactique">Wikipédia</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 						<li><a href="https://twitter.com/Epharos30/status/805889784476553220">Mon twitter</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 					</ul>
 				</td>
 
 				<td>
 					<div id="article">
-						<!-- CONTENU DE L'ARTICLE ICI -->
 						<h1><span>Accueil </span></h1>
 
-						<h2><span>Introduction</span></h2>
+						<h2 id="introduction"><span>Introduction</span></h2>
 
-						<p>Salut et bienvenue sur le site de <strong>Brainstorm</strong> !<br><br>
-						Si tu es intéressé par l'<strong>intelligence artificielle</strong> (<em>IA</em>) alors tu es tombé au bon endroit. Brainstorm est un site créé spécialement pour l'IA, pour que n'importe qui puisse comprendre comment
-						ça fonctionne et puisse même peut-être créer sa propre IA, qui sait ?
+						<p>
+							Salut et bienvenue sur le site de <strong>Brainstorm</strong> !<br><br>
+							Si tu es intéressé par l'<strong>intelligence artificielle</strong> (<em>IA</em>) alors tu es tombé au bon endroit. Brainstorm est un site créé spécialement pour l'IA, pour que n'importe qui puisse comprendre comment ça fonctionne et puisse même peut-être créer sa propre IA, qui sait ?
+						</p>
 
-<!-- <pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Langage</span></span>
+						<div class="img" style="width : 260px">
+							<img src="images/intro.png" alt="Logo du site épuré" style="width : 260px ; height : 192px"><br>
+							<span style="display : block ; border-top : 1px solid gray ; padding-top : 5px ; margin : auto ; margin-top : 5px ; width : 95%">Le cerveau d'un androïd ?</span>
+						</div>
 
-<code>yolo, yala <span class="pequal">=</span> <span class="pvalue">1</span>, <span class="pvalue">3</span>
+						<p>
+							Je ne vais pas vous cacher que ce site tombera probablement dans l'oubli assez rapidement étant donné qu'il est statique et très compliqué à modifier ... En revanche ce design (assez mignon je trouve) sera probablement en partie réutilisé le jour où je me serai décidé à créer mon propre 'blog'.
+						</p>
 
-<span class="pequal">print</span> <span class="pstring">"<span class="pvalue">{1}</span>, <span class="pvalue">{2}</span>, salut, <span class="pvalue">{2}</span>, <span class="pvalue">{1}</span>"</span>.<span class="pfunction">format</span>(yolo, yala) 
+						<h2 id="tutos"><span>Tutoriels</span></h2>
 
-<span class="pdef">def</span> <span class="pstring">test</span>(<span class="pargument">index</span>) :
-	<span class="pequal">pass</span></code></pre> -->
+						<p>
+							La totalité des cours que vous pourez lire sur ce site on été écrit par mes soins. Si, éventuellement, une portion de code n'aurait pas été écrite par moi-même, une indication sera faite avant ou après le code, mais de manière à ce que l'info ne soit pas cachée.<br><br>
 
-						<div class="img" style="width : 220px"><img src="images/intro.jpg"><br><span style="display : block ; border-top : 1px solid gray ; padding-top : 5px ; margin : auto ; margin-top : 5px ; width : 95%">Le cerveau d'un androïd ?</span></div>
+							Les 4 tutoriels disponibles actuellement sur le site sont :
+						</p>
 
-						Je ne vais pas vous cacher que ce site tombera probablement dans l'oubli assez rapidement étant donné qu'il est statique et très compliqué à modifier ... En revanche ce design (assez mignon je trouve) sera probablement en partie réutilisé le jour où je me serai décidé à créer mon propre 'blog'.</p>
-
-						<h2><span>Tutoriels</span></h2>
-
-						<p>La totalité des cours que vous pourez lire sur ce site on été écrit par mes soins. Si, éventuellement, une portion de code n'aurait pas été écrite par moi-même, une indication sera faite avant ou après le code, mais de manière à ce que l'info ne soit pas cachée.<br><br>
-
-						Les 4 tutoriels disponibles actuellement sur le site sont :
-
-						<ul class="list" style="width : 180px ; text-align : left">
-							<li><a href="index.html">Accueil</a></li>
-							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
+						<ul class="list" style="width : 20% ; text-align : left">
 							<li><a href="minmax.html">Minmax</a></li>
-							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 							<li><a href="rdn.html">Réseau de neurones</a></li>
-							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 							<li><a href="qlearning.html">Q-Learning</a></li>
-							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 							<li><a href="ocr.html">OCR</a></li>
 						</ul>
 
-						<div class="info"><i class="fa fa-info fa-3x" aria-hidden="true"></i>Au moment même où vous lisez cet article, les tutoriels ne sont probablement pas tous terminés (ce serait inhumain de faire ça en 1 mois !), mais ce qui est déjà présent donne déjà une bonne idée de ce qu'est l'IA</div>
+						<div class="info">
+							<i class="fa fa-info fa-3x"></i>
+							Au moment même où vous lisez cet article, les tutoriels ne sont probablement pas tous terminés (ce serait inhumain de faire ça en 1 mois !), mais ce qui est déjà présent donne déjà une bonne idée de ce qu'est l'IA
+						</div>
+
+						<p>
+							Les tutoriels seront programmés tantôt en Python tantôt en Java (désolé si ce n'est pas votre meilleur ami !).
 						</p>
 
-						<h2><span>Projets</span></h2>
+						<h2 id="projets"><span>Projets</span></h2>
 
-						<h2><span>Sources</span></h2>
+						<p>
+							Etant développeur à mes heures perdues et n'ayant pas appris l'IA par le miracle du saint esprit, j'ai plusieurs projets à mon actif. Ils sont tous disponibles sur mon Github en cliquant sur ma grosse tête en dessous ou sur un lien de repository à côté :
+						</p>
+
+						<table id="projects">
+							<thead>
+								<tr>
+									<th>Projet</th>
+									<th>Date</th>
+									<th>Langage</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td><a href="https://github.com/Epharos/GrowingHack">Growing Hack</a></td>
+									<td>Janvier 2015</td>
+									<td>Java</td>
+								</tr>
+
+								<tr>
+									<td><a href="https://github.com/Epharos/Logic">Tables de vérité</a></td>
+									<td>Novembre 2016</td>
+									<td>Python</td>
+								</tr>
+
+								<tr>
+									<td><a href="https://github.com/Epharos/Projet-S1">Conception Internet - Semestre 1</a></td>
+									<td>Décembre 2016 - Janvier 2017</td>
+									<td>HTML - CSS</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="warning">
+							<i class="fa fa-exclamation fa-3x"></i>
+							Certains de ces projets sont vieux (Growing Hack par exemple) et n'ont pas été touchés depuis un moment. Ces projets sont là en guise d'exemple, sinon cliquez <a href="https://github.com/Epharos">ici</a> pour accéder à ma page Github complète
+						</div>
+
+						<h2 id="sources"><span>Sources</span></h2>
+
+						<p>
+							Toutes les sources présentes dans les tutoriels ont été écrits par mes soins. La totalité du code est à moi (yolo) et est sous licence Creative Commons (BY NC SA)<br><br>
+
+							Dans la plupart des cas les sources vous seront présentées comme suit :
+						</p>
+
+<pre><span class="language" style="font-weight : bold">Code : <span style="color : red;">Python</span></span>
+
+<code>a, b <span class="pequal">=</span> <span class="pvalue">1</span>, <span class="pvalue">3</span>
+
+<span class="pequal">print</span> <span class="pstring">"<span class="pvalue">{1}</span>, <span class="pvalue">{2}</span>, salut, <span class="pvalue">{2}</span>, <span class="pvalue">{1}</span>"</span>.<span class="pfunction">format</span>(a, b) 
+
+<span class="pdef">def</span> <span class="pstring">function</span>(<span class="pargument">index</span>) :
+	<span class="pequal">pass</span></code></pre>
+
+						<p>
+							L'utilisation du Javascript étant interdite, la coloration syntaxique se fait "à la main" avec des balises span. Vous vous doutez qu'au vu de la quantité de code présente sur ce site, je ne me suis pas amusé à mettre moi même les balises. C'est pour quoi j'ai créé un petit programme en Java qui demande le code pur en entré et qui en sorti donne le code HTML correspondant aux code de ce site.
+						</p>
+
+						<div class="img" style="width : 698px">
+							<img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAQ6AAAAJGIxZjRjMzg0LWI4ZjgtNGQ0My1iMzYxLTE0MDgwZDZjYzQ1ZA.jpg" alt="Dicton de développeur"><br>
+							<span style="display : block ; border-top : 1px solid gray ; padding-top : 5px ; margin : auto ; margin-top : 5px ; width : 95%">« La paresse est la caractéristique la plus importante d'un développeur »</span>
+						</div>
+
+						<p>
+							En vous souhaitant une bonne visite, et un bon apprentissange ;)
+						</p>
+
+						<!-- https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAQ6AAAAJGIxZjRjMzg0LWI4ZjgtNGQ0My1iMzYxLTE0MDgwZDZjYzQ1ZA.jpg -->
 					</div>
 
 					<div id="author">
@@ -122,13 +183,10 @@
 					<h4 class="nav">Parties</h4>
 
 					<ul id="articlemenu">
-						<li><a href="index.html">Introduction</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
-						<li><a href="minmax.html">Tutoriels</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
-						<li><a href="rdn.html">Projets</a></li>
-						<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
-						<li><a href="qlearning.html">Sources</a></li>
+						<li><a href="#introduction">Introduction</a></li>
+						<li><a href="#tutos">Tutoriels</a></li>
+						<li><a href="#projets">Projets</a></li>
+						<li><a href="#sources">Sources</a></li>
 					</ul>
 				</td>
 			</tr>
@@ -138,30 +196,27 @@
 			</tr>
 
 			<tr id="foot">
-				<td colspan="3">
+				<td colspan="3" style="height : 150px">
 					<div id="footer">
 						<ul id="footer_first">
 							<li><a href="http://ceri.univ-avignon.fr/">CERI</a></li>
-							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 							<li><a href="mailto:aurelien.rey@alumni.univ-avignon.fr">Me contacter</a></li>
 						</ul>
 
 						<ul id="footer_second">
 							<li><a href="https://openclassrooms.com/courses/apprenez-a-programmer-en-python">Cours Python</a></li>
-							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 							<li><a href="https://openclassrooms.com/courses/apprenez-a-programmer-en-java">Cours Java</a></li>
-							<hr style="margin : 2px 0 2px 0 ; padding : 0 ; height : 1px ; background-color : rgb(20, 20, 20) ; border : none; opacity : 0.2">
 							<li><a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3">Cours HTML - CSS</a></li>
 						</ul>
 
 						<div id="footer_third">
 							<p>Ce site a été développé par REY Aurélien dans le cadre du cours de Conception Internet en guise de projet de fin du premier semestre.</p>
 
-							<div id="socials"><a href="https://www.facebook.com/Aurelien.Rey.Epharos"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a> 
-							<a href="#"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a> 
-							<a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a> 
-							<a href="https://twitter.com/Epharos30"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> 
-							<a href="https://github.com/Epharos"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+							<div id="socials"><a href="https://www.facebook.com/Aurelien.Rey.Epharos"><i class="fa fa-facebook-official fa-2x"></i></a> 
+							<a href="#"><i class="fa fa-skype fa-2x"></i></a> 
+							<a href="#"><i class="fa fa-youtube fa-2x"></i></a> 
+							<a href="https://twitter.com/Epharos30"><i class="fa fa-twitter fa-2x"></i></a> 
+							<a href="https://github.com/Epharos"><i class="fa fa-github fa-2x"></i></a></div>
 						</div>
 					</div>
 				</td>
@@ -179,13 +234,18 @@
 
 <!-- ZONES -->
 
-<!-- <div class="info"><i class="fa fa-info fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div>
-<div class="question"><i class="fa fa-question fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div>
-<div class="warning"><i class="fa fa-exclamation fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div>
-<div class="error"><i class="fa fa-times fa-3x" aria-hidden="true"></i>Et oui, voilà une petite zone d'information !</div> -->
+<!-- <div class="info"><i class="fa fa-info fa-3x"></i>Et oui, voilà une petite zone d'information !</div>
+<div class="question"><i class="fa fa-question fa-3x"></i>Et oui, voilà une petite zone d'information !</div>
+<div class="warning"><i class="fa fa-exclamation fa-3x"></i>Et oui, voilà une petite zone d'information !</div>
+<div class="error"><i class="fa fa-times fa-3x"></i>Et oui, voilà une petite zone d'information !</div> -->
 
 
-<!-- CONSOLE -->
+<!-- <pre><span class="language" style="font-weight : bold; border-bottom : 1px solid black">Code : <span style="color : red;">Langage</span></span>
 
+<code>yolo, yala <span class="pequal">=</span> <span class="pvalue">1</span>, <span class="pvalue">3</span>
 
+<span class="pequal">print</span> <span class="pstring">"<span class="pvalue">{1}</span>, <span class="pvalue">{2}</span>, salut, <span class="pvalue">{2}</span>, <span class="pvalue">{1}</span>"</span>.<span class="pfunction">format</span>(yolo, yala) 
+
+<span class="pdef">def</span> <span class="pstring">test</span>(<span class="pargument">index</span>) :
+	<span class="pequal">pass</span></code></pre> -->
 
